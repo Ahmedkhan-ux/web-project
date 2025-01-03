@@ -1,0 +1,146 @@
+ /* Global Styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    background: url("Pic/kirill-fokin-aBEqxwU_Jq0-unsplash.jpg") no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(40deg, #0497ff, #403df4ee);
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+nav .logo p {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ff8c69;
+    transition: all 0.4s ease;
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 100px 20px 20px;
+}
+
+#available-books h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    background-color: rgba(31, 180, 234, 0.31);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    width: 80vw;
+    margin: 20px;
+    text-align: center;
+}
+
+.book h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.book p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-image: linear-gradient(40deg, #0497ff, #403df4ee);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.byer {
+    margin-top: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    nav .logo p {
+        font-size: 20px;
+    }
+
+    nav li a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .book {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo p {
+        font-size: 18px;
+    }
+
+    nav li a {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+}
